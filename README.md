@@ -7,6 +7,9 @@ Python, Pandas, PostgreSQL, psycopg2, python-dotenv, pytest, Python logging.
 
 ## Pipeline flow
 `data/raw/audience_events.csv` → `src/ingest.py` (validate and deduplicate) → `data/processed/` (valid and rejected CSVs) → `src/load.py` (PostgreSQL staging) → `src/transform.py` (dimensions and fact table). `run_pipeline.py` runs the steps in sequence.
+## Pipeline Architecture
+
+![Audience Data Engineering Pipeline](Audience%20Data%20Engineering%20Pipeline.png)
 
 ## Data-quality checks
 - Required `user_id` is present
