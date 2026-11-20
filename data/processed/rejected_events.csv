@@ -1,0 +1,5 @@
+event_id,user_id,event_type,event_timestamp
+E008,,click,2026-10-31 09:35:00
+E009,U106,invalid_event,2026-10-31 09:40:00
+E010,U107,page_view,invalid_date
+E002,U102,click,2026-10-31 09:05:00
